@@ -13,7 +13,7 @@ function get_tweets(){
 
 function get_comments(hashtag){
     $.ajax({
-        url: "http://search.twitter.com/search.json?q=%23ForestGrove",// + hashtag,
+        url: "http://search.twitter.com/search.json?q=%23" + hashtag,
         dataType: "jsonp",
         success: function(data){
             if( data.results.length > 0 ) {
