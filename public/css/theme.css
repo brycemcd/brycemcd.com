@@ -1,40 +1,40 @@
 	
 	/* Background image */
 	body{
-	background:#000 url(../images/brown_wood.jpg) repeat-y 50% top;
+	background:#000 url(../images/grey_wood.jpg) repeat-y 50% top;
 	}
 	
 	/* LINKS COLORS */
 	#navigation ul li a:hover{
-		color:#816047;
+		color:#8592a6;
 	}
-	#teaser a, #main a{ color:#816047; }
-	#teaser a:hover, #main a:hover{ color:#e690d2; }
+	#teaser a, #main a{ color:#8592a6; }
+	#teaser a:hover, #main a:hover{ color:#719f3e; }
 	
 	.cols_x1, .cols_x2, .cols_x3, .cols_x4, #teaser .content{
-		border:1px solid #836348; border-width:0 0 1px 0;
+		border:1px solid #545454; border-width:0 0 1px 0;
 	}
 	
 	/* SEPARATORS */
 	.separator_full{
 		background:url(../images/transparency.png);
-		border:1px solid #836348; border-width:0 0 1px 0;
+		border:1px solid #545454; border-width:0 0 1px 0;
 		height:9px;
 	}
 	.separator_small_full{
 		background:url(../images/transparency.png);
-		border:1px solid #836348; border-width:0 0 1px 0;
+		border:1px solid #545454; border-width:0 0 1px 0;
 		height:3px;
 	}
 	
 	/* Cols */
 	.blog_entry, .blog_entry_list, .list_nocols a, .list_cols a{
-		border:1px dotted #836348; border-width:0 0 1px 0;
+		border:1px dotted #545454; border-width:0 0 1px 0;
 	}
 	
 	.list_nocols a:hover{
-		color:#e690d2 !important;
+		color:#719f3e !important;
 	}
 	.list_cols a:hover{
-		color:#e690d2 !important;
+		color:#719f3e !important;
 	}

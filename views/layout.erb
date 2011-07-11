@@ -1,23 +1,123 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html>
-	<head>
-		<!-- STYLES -->
-		<link rel="stylesheet" href="/css/application.css" type="text/css" media="screen" charset="utf-8">
-		<style type="text/css" media="screen">
-			#content{
-				margin:20px auto;
-				width:50%;
-				border:1px solid black;
-				text-align:center;
-			}
-		</style>
-		<!-- JS -->
-		<script src="/js/application.js" type="text/javascript" charset="utf-8"></script>
-		
-	</head>
-	
-	<body>
-		<%= yield %>
-	</body>
-</html>
+    <head>
+        <title>Ruby on Rails Developer - Bryce McDonnell <%= "- #{titleize @title}" if defined?(@title) %> </title>
+        <!-- STYLES -->
+        <link href="/css/styles.css" rel="stylesheet" type="text/css" media="all" />	
+        <link href="/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/css/nivo-slider.css" rel="stylesheet" type="text/css" media="screen" />
+        <link rel="stylesheet" href="/css/application.css" type="text/css" media="screen" charset="utf-8">
+
+        <!-- JS -->
+        <script type="text/javascript" src="/js/jquery-1.4.1.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+        <script src="/js/application.js" type="text/javascript" charset="utf-8"></script>
+
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <div id="header">
+            <!-- content of header -->
+            <div class="content">
+                <div id="logo">
+                    <a href="/"><span class="head">Bryce McDonnell</span><span class="tag">Solving business problems with technology</span></a>
+                </div>
+
+                <div id="navigation">
+                    <ul id="menu" class="droid">
+                        <li><a href="/" class="current" title="Home">Home</a></li>
+                        <li><a href="/portfolio"  title="Portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <!-- /Navigation -->
+
+                <div class="clear"></div>
+
+            </div>
+            <!-- /content of header -->
+        </div>
+        <!-- /HEADER -->
+<div id="main"> 
+    <!-- content of main --> 
+    <div class="content blog_post"> 
+
+        <h2 class="droid margin_40_0_10_0"><%= @post['title'] %></h2> 
+
+        <div class="separator_full"></div> 
+
+        <!-- Block 2 columns --> 
+        <div class="cols_x2"> 
+
+            <!-- cols_2 --> 
+            <div class="cols_2"> 
+
+                <!-- Blog block --> 
+                    <div class="date_blog_entry droid"><%= @post["date_published"].post_date %> </div> 
+                <div class="blog_entry"> 
+   
+        <%= yield %>
+<div class="clear"></div> 
+</div> 
+<!-- /Blog block --> 
+
+
+
+</div> 
+<!-- /cols_2 --> 
+
+<div class="clear"></div> 
+</div> 
+<!-- /Block 2 columns --> 
+        <!-- Block 1 column --> 
+        <div class="cols_x1"> 
+        	
+            <!-- cols_1 --> 
+          <div class="cols_1"> 
+           	<h4 class="droid">Recent entries</h4> 
+              <ul class="list_nocols"> 
+                  <% recent_posts[0..3].each do |post| %>
+                    <li>
+                        <a href="/<%= post['title'].reverse_titleize %>"><span><%= post['title'] %></span></a>
+                    </li>
+                    <% end %>
+                    <span class="view_more"><a href="#" class="view_more">view more ...</a></span>
+                    <div id="more_posts" style="display:none;">
+                  <% recent_posts[4..-1].each do |post| %>
+                    <li>
+                        <a href="/<%= post['title'].reverse_titleize %>"><span><%= post['title'] %></span></a>
+                    </li>
+                    <% end %>
+                    </div>
+              </ul>     
+              
+              <div class="clear"></div> 
+              
+           	<!-- TODO: this is a good idea h4 class="droid">Categories</h4> 
+              <ul class="list_cols"> 
+              <li><a href="#"><span>JQuery</span></a></li> 
+              <li><a href="#"><span>Photoshop</span></a></li> 
+              <li><a href="#"><span>Illustrator</span></a></li> 
+              <li><a href="#"><span>News</span></a></li> 
+              </ul> 
+              <ul class="list_cols"> 
+              <li><a href="#"><span>Inspirations</span></a></li> 
+              <li><a href="#"><span>Technologies</span></a></li> 
+              <li><a href="#"><span>Tutorials</span></a></li> 
+              </ul --> 
+          </div> 
+            <!-- /cols_1 --> 
+            
+        <div class="clear"></div> 
+        </div> 
+        <!-- /Block 1 column --> 
+    
+        <div class="clear"></div> 
+    
+    <div class="separator_full"></div> 
+    
+</div> 
+    <!-- /content of main --> 
+</div> 
+<!-- /MAIN --> 
+<%= erb(:_footer, :layout => false) %>

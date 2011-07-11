@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Ruby on Rails Developer - Bryce McDonnell <%= "- #{titleize @title}" if defined?(@title) %> </title>
+        <!-- STYLES -->
+        <link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />	
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/nivo-slider.css" rel="stylesheet" type="text/css" media="screen" />
+        <link rel="stylesheet" href="/css/application.css" type="text/css" media="screen" charset="utf-8">
+
+        <!-- JS -->
+        <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script src="/js/application.js" type="text/javascript" charset="utf-8"></script>
+
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <div id="header">
+            <!-- content of header -->
+            <div class="content">
+                <div id="logo">
+                    <a href="/"><span class="head">Bryce McDonnell</span><span class="tag">Solving business problems with technology</span></a>
+                </div>
+
+                <div id="navigation">
+                    <ul id="menu" class="droid">
+                        <li><a href="/" class="current" title="Home">Home</a></li>
+                        <li><a href="/portfolio"  title="Portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <!-- /Navigation -->
+
+                <div class="clear"></div>
+
+            </div>
+            <!-- /content of header -->
+        </div>
+        <!-- /HEADER -->
+
+        <%= yield %>
+        <%= erb(:_footer, :layout => false) %>

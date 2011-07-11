@@ -1,4 +1,68 @@
-<div id="content">
-	<h1> Sinatra in da house </h1>
-	<p>... and it is good</p>
+<!-- TEASER -->
+<div id="teaser">
+    <!-- content of teaser -->
+    <div class="content">
+
+        <div class="teaser_text">
+            <h2 class="droid">Technologically Entrepreneurial</h2>
+            <p>I'm currently a ruby on rails developer / technology director at a fast growing start up in Portland, Oregon</p>
+            <p>I've been involved with many other seed stage companies helping to build a vision into a reality</p>
+            <p>I'll share thoughts on engineering ruby on rails applications, systems admin, online marketing and general entrepreneurship</p>
+        </div>
+
+        <div id="ipad">
+            <div id="slider_content">
+                <script src="https://gist.github.com/981513.js?file=gistfile1.rb"></script>
+            </div>
+        </div>
+
+    </div>
+    <!-- /content of teaser -->
 </div>
+<!-- /TEASER -->
+
+
+
+
+
+<!-- MAIN -->
+<div id="main">
+    <!-- content of main -->
+    <div class="content">
+
+        <div id="social_contain">
+            <div class="separator_small_full"></div>
+            <div id="social_connect">
+                <h4> <span class="droid">Connect With</span> <span class="expletive">Me</span> </h4>
+                <a href="http://www.linkedin.com/in/brycemcd" target="_blank">
+                    <img src="/images/linkedin.png" class="reflect" alt="Bryce McDonnell's profile at Linked In" />
+                </a>
+                <a href="http://www.github.com/brycem" target="_blank">
+                    <img src="/images/github.png" class="reflect" alt="Bryce McDonnell's profile at github.com" />
+                </a>
+                <a href="http://stackoverflow.com/users/366464/bryce">
+                    <img src="http://stackoverflow.com/users/flair/366464.png?theme=dark" width="208" height="58" alt="My profile at Stack Overflow" title="My profile at Stack Overflow" class="reflect" />
+                </a>
+
+            </div>
+            <div class="separator_small_full"></div>
+        </div>
+
+
+        <!-- Block 4 columns -->
+        <div class="cols_x4">
+            <% recent_posts[0..3].each do |post|  %>
+                <div class="cols_1">
+                    <h4 class="droid"> <a href="/<%= post['title'].reverse_titleize %>"><%= post['title'] %></a></h4>
+                    <p> <%= post['excerpt'] %> </p>
+                    <a href="/<%= post['title'].reverse_titleize %>">Read On &hellip;</a>
+                </div>
+            <% end %>
+        </div>
+        <!-- /Block 4 columns -->
+
+        <div class="separator_full"></div>
+        </div>
+    <!-- /content of main -->
+</div>
+<!-- /MAIN -->

@@ -1,0 +1,20 @@
+- 
+    title: Ruby Relationships Without The Database
+    date_published: 02/26/2010
+    excerpt: Sometimes you don't need a database to persist data. If the dataset is small, and the model simple, a YAML file or static method will do.
+- 
+    title: Fat Free CRM Lead Form
+    date_published: 07/24/09
+    excerpt: I've been developing on Fat Free CRM for some time. To help out adoption of the platform, and my own business, I've written a plugin for wordpress to get leads into the CRM
+- 
+    title: Custom Routes With Shoulda
+    date_published: 02/19/2010
+    excerpt: In this post, I describe how to test that routes are resolving to the correct URL
+- 
+    title: Samba Server Integration
+    date_published: 07/14/2009
+    excerpt: While on a trip to Beirut, I did some work setting up a file server
+- 
+    title: Improved Content Slider using MooTools
+    date_published: 05/27/2009
+    excerpt: A great, open-sourced, horizontal slider using Mootools javascript framework.

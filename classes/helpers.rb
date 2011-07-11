@@ -1,9 +1,10 @@
 module Helpers
-  def whoops
-    return "really"
-  end
+    def titleize(string)
+        string.gsub("-", " ").split(" ").map {|s| s.capitalize }.join(" ")
+    end
 
-  def hello
-    "world"
-  end
+    def recent_posts
+        #Dir.entries("views/blog") - ["." , ".."]
+        YAML::load( File.open( "config/blogs.yml" ) )
+    end
 end

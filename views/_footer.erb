@@ -1,0 +1,112 @@
+
+<!-- FOOTER -->
+<div id="footer">
+    <!-- content of footer -->
+    <div class="content">
+
+        <!-- Column list -->
+        <div class="columns_4_list">
+
+            <h4 class="droid">Recommended <span class="expletive">Books</span></h4>
+            <span class="book">
+                <a href="http://www.amazon.com/gp/offer-listing/1934356549/ref=as_li_tf_il?ie=UTF8&tag=brycemcdonnel-20&linkCode=am2&camp=217145&creative=399369&creativeASIN=1934356549"><img border="0" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=1934356549&MarketPlace=US&ID=AsinImage&WS=1&tag=brycemcdonnel-20&ServiceVersion=20070822" class="reflect"></a><img src="http://www.assoc-amazon.com/e/ir?t=brycemcdonnel-20&l=as2&o=1&a=1934356549&camp=217145&creative=399369" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+                <p>I feel this is the authoritative source for learning rails quickly. I began my journey on the 1.0 version of this book creating the "depot" application. </p>
+            </span>
+        </div>
+        <!-- /Column list -->
+
+        <!-- Column list -->
+        <div class="columns_4_list margin_middle">
+            <h4 class="droid">Recommended<span class="expletive">Books</span></h4>
+            <span class="book">
+                <a title="Version Control in Git (O'Reilly)" href="http://www.amazon.com/gp/offer-listing/0596520123/ref=as_li_tf_il?ie=UTF8&tag=brycemcdonnel-20&linkCode=am2&camp=217145&creative=399369&creativeASIN=0596520123"><img border="0" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=0596520123&MarketPlace=US&ID=AsinImage&WS=1&tag=brycemcdonnel-20&ServiceVersion=20070822" class="reflect"></a><img src="http://www.assoc-amazon.com/e/ir?t=brycemcdonnel-20&l=as2&o=1&a=0596520123&camp=217145&creative=399369" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+                <p>This book helped me learn the internals of Git quick. Now, I'm convinced Git is the best version control software ever made.</p>
+            </span>
+        </div>
+        <!-- /Column list -->
+
+        <!-- Column list -->
+        <div class="columns_4_list">
+            <h4 class="droid">Recommended<span class="expletive">Books</span></h4>
+            <span class="book">
+                <a title="Pro Git" href="http://www.amazon.com/gp/offer-listing/1430218339/ref=as_li_tf_il?ie=UTF8&tag=brycemcdonnel-20&linkCode=am2&camp=217145&creative=399369&creativeASIN=1430218339"><img border="0" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=1430218339&MarketPlace=US&ID=AsinImage&WS=1&tag=brycemcdonnel-20&ServiceVersion=20070822" class="reflect"></a><img src="http://www.assoc-amazon.com/e/ir?t=brycemcdonnel-20&l=as2&o=1&a=1430218339&camp=217145&creative=399369" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+                <p>Another Git book but written from a day to day user interaction experience.</p>
+            </span>
+        </div>
+        <!-- /Column list -->
+
+        <!-- Column list -->
+        <div class="columns_4_list">
+            <h4 class="droid">Recommended<span class="expletive">Books</span></h4>
+            <spann class="book">
+            <a href="http://www.amazon.com/gp/offer-listing/1934356476/ref=as_li_tf_il?ie=UTF8&tag=brycemcdonnel-20&linkCode=am2&camp=217145&creative=399369&creativeASIN=1934356476"><img border="0" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=1934356476&MarketPlace=US&ID=AsinImage&WS=1&tag=brycemcdonnel-20&ServiceVersion=20070822" class="reflect"></a><img src="http://www.assoc-amazon.com/e/ir?t=brycemcdonnel-20&l=as2&o=1&a=1934356476&camp=217145&creative=399369" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+            <p> One of the most <em>fun</em> books I've ever read on programming. If you're not using ruby's meta programming features, you're not really using ruby </p>
+            </span>
+        </div>
+        <!-- /Column list -->
+
+        <div class="clear"></div>
+
+        <div id="twitter">
+            <h4> <span class="droid">Recent</span> <span class="expletive">Tweets</span> </h4>
+        </div>
+
+        <div class="clear"></div>
+        <div id="flickr" class="flickr_gallery">
+        </div>
+        <div class="clear"></div>
+
+        <!-- copyright -->
+        <div class="copyright">
+            <div class="left">Copyright 2011 - Bryce McDonnell Enterprises - All rights reserved</div>
+            <div class="right">contact: bryce [at] bridgetownint [dot] com - 503.914.0202 </div>
+        </div>
+        <!-- /copyright -->
+
+    </div>
+    <!-- /content of footer -->
+</div>
+<!-- /FOOTER -->
+<script src="/js/cufon-yui.js" type="text/javascript"></script>
+<script src="/js/droid_400.font.js" type="text/javascript"></script>
+<script src="/js/expletive_400.font.js" type="text/javascript"></script>
+<script type="text/javascript">
+    Cufon.replace('.droid',{ hover: true, fontFamily: 'droid' });
+    Cufon.replace('.expletive', { hover: true, fontFamily: 'expletive' });
+    </script>
+    <script type="text/javascript"> 
+        Cufon.now(); 
+        $(function(){
+                $(".view_more").click(function(){
+                    $("#more_posts").fadeIn();
+                    $(this).fadeOut();
+                    return false
+                    });        
+                // initially set the opacity of the photos to 0
+                $('div#flickr').fadeOut();
+                $.ajax({
+url: "https://api.twitter.com/1/statuses/user_timeline.json?screen_name=brycemcd&count=4",
+dataType: "jsonp",
+success: function(data){
+$.each(data, function(index, tweet ){
+    $("div#twitter").append("<div class='tweet'>"+ tweet.text +"</div>");
+    })
+}
+});
+// end twitter, start photos
+                $.ajax({
+url: "/photos",
+success: function(data){
+    $.each(data, function(index, photo ){
+    $("div#flickr").append("<img src='"+ photo.thumbnail_3 +"' alt='cell phone imagry' />");
+    })
+}
+});
+// end photos
+$("div#flickr").fadeIn("slow");
+                });
+</script>
+
+            </body>
+        </html>
