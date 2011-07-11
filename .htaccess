@@ -1,0 +1,3 @@
+redirect 301 /topics/portfolio/ http://www.brycemcdonnell.com/portfolio
+redirect 301 /contact/ http://www.brycemcdonnell.com/
+redirect 301 /2009/03/mootools-content-slider-javascript/ http://www.brycemcdonnell.com/improved content-slider-using-mootools

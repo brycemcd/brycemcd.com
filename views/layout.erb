@@ -61,6 +61,11 @@
 </div> 
 <!-- /Blog block --> 
 
+    <% if @post["hashtag"] %>
+    <div id="comments">
+        <span class="comment_explain">I didn't want to build an entire commenting engine. I'm lazy :) Tweet a comment using the hashtag #<%= @post["hashtag"] %> and I'll reply. Those tweets will show up here. </span>
+    </div>
+    <% end %>
 
 
 </div> 

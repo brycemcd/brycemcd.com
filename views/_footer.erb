@@ -71,6 +71,7 @@
 <script src="/js/cufon-yui.js" type="text/javascript"></script>
 <script src="/js/droid_400.font.js" type="text/javascript"></script>
 <script src="/js/expletive_400.font.js" type="text/javascript"></script>
+<script src="/js/application.js" type="text/javascript"></script>
 <script type="text/javascript">
     Cufon.replace('.droid',{ hover: true, fontFamily: 'droid' });
     Cufon.replace('.expletive', { hover: true, fontFamily: 'expletive' });
@@ -83,27 +84,12 @@
                     $(this).fadeOut();
                     return false
                     });        
-                // initially set the opacity of the photos to 0
                 $('div#flickr').fadeOut();
-                $.ajax({
-url: "https://api.twitter.com/1/statuses/user_timeline.json?screen_name=brycemcd&count=4",
-dataType: "jsonp",
-success: function(data){
-$.each(data, function(index, tweet ){
-    $("div#twitter").append("<div class='tweet'>"+ tweet.text +"</div>");
-    })
-}
-});
-// end twitter, start photos
-                $.ajax({
-url: "/photos",
-success: function(data){
-    $.each(data, function(index, photo ){
-    $("div#flickr").append("<img src='"+ photo.thumbnail_3 +"' alt='cell phone imagry' />");
-    })
-}
-});
-// end photos
+                get_tweets();
+                <% if @post["hashtag"] %>
+                    get_comments('<%= @post["hashtag"] %>');
+                <% end %>
+                get_photos();
 $("div#flickr").fadeIn("slow");
                 });
 </script>

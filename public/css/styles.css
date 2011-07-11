@@ -694,10 +694,6 @@ h6{	font-size:14px; }
 }
 .comments_post .avatar{
 	float:left;
-	width:100px;
-}
-.comments_post .avatar img{
-	border:1px solid #999;
 	padding:7px;
 }
 .comments_post .user_post{
