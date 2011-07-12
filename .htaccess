@@ -19,3 +19,5 @@ redirect 301 /2008/07/college-guide-post/ / http://www.brycemcdonnell.com/portfo
 redirect 301 /2010/02/ruby-relationships-without-the-database http://www.brycemcdonnell.com/portfolio
 redirect 301 /topics/technology http://www.brycemcdonnell.com/portfolio
 redirect 301 /skills-and-expert-groups/paypal-integration/ http://www.brycemcdonnell.com/portfolio
+redirect 301 /contacts/ http://www.brycemcdonnell.com/portfolio
+redirect 301 /sitemap http://www.brycemcdonnell.com/sitemap.xml 
