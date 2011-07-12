@@ -4,6 +4,8 @@ require 'httparty'
 require 'picasa'
 require 'json'
 require 'builder'
+require 'redis'
+$redis = Redis.new
 
 helpers { include Helpers }
 
@@ -21,8 +23,15 @@ end
 
 get "/photos" do
     content_type 'application/json'
-    @photos = Picasa.photos(:google_user => "brycebrycebaby", :album_id => "5625352816807757329")[:photos]
-   JSON.generate( @photos[0..7] )
+    json = $redis.get "photos"
+    unless json
+        @photos = Picasa.photos(:google_user => "brycebrycebaby", :album_id => "5625352816807757329")[:photos]
+        
+        json = JSON.generate( @photos[0..7] )
+        $redis.set "photos", json
+        $redis.expire "photos", 5.days.from_now
+    end
+    json
 end
 
 get "/sitemap.xml" do
