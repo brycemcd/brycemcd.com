@@ -3,6 +3,8 @@ require 'classes/string'
 require 'httparty'
 require 'picasa'
 require 'json'
+require 'builder'
+
 helpers { include Helpers }
 
 get '/' do
@@ -21,6 +23,21 @@ get "/photos" do
     content_type 'application/json'
     @photos = Picasa.photos(:google_user => "brycebrycebaby", :album_id => "5625352816807757329")[:photos]
    JSON.generate( @photos[0..7] )
+end
+
+get "/sitemap.xml" do
+    xml = Builder::XmlMarkup.new(:indent => 2)
+    xml.instruct!
+    xml.urlset "xmlns:xsi" =>"http://www.w3.org/2001/XMLSchema-instance" , "xsi:schemaLocation" => "http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd", "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9"  do
+        recent_posts.each do |post|
+            xml.url do
+                xml.loc "http://www.brycemcdonnell.com/#{post["title"].reverse_titleize}"
+                xml.lastmod Time.parse(post["date_published"]).iso8601
+                xml.changefreq "monthly"
+                xml.priority "0.2"
+            end
+        end
+    end
 end
 
 get "/:page" do

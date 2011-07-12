@@ -1,12 +1,3 @@
-## Hello world
-
-this is kinda cool
-
-now, here's a list:
-
-+ one
-+ two
-
 <script src="https://gist.github.com/981513.js?file=gistfile1.rb"></script>
 <noscript>
     class Person

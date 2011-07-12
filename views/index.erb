@@ -53,9 +53,10 @@
         <div class="cols_x4">
             <% recent_posts[0..3].each do |post|  %>
                 <div class="cols_1">
-                    <h4 class="droid"> <a href="/<%= post['title'].reverse_titleize %>"><%= post['title'] %></a></h4>
+                    <h3 class="home_blog_link">
+                        <a style="" href="/<%= post['title'].reverse_titleize %>"><%= post['title'] %></a>
+                    </h3>
                     <p> <%= post['excerpt'] %> </p>
-                    <a href="/<%= post['title'].reverse_titleize %>">Read On &hellip;</a>
                 </div>
             <% end %>
         </div>

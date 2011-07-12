@@ -23,3 +23,18 @@
     hashtag: mooslide
     date_published: 05/27/2009
     excerpt: A great, open-sourced, horizontal slider using Mootools javascript framework.
+-
+    title: I Made it in to Inc Magazine
+    hashtag: baminc
+    date_published: 12/3/2009
+    excerpt: I'm really fortunate to have been published in my favorite magazine.
+-
+    title: Thoughts on Developing
+    hashtag: bamthoughts
+    date_published: 7/16/2009
+    excerpt: I've been a developer for a few years and see a few ways I think a little differently.
+-
+    title: TextMate Bundle for Asterisk Telephony
+    hashtag: bamtmbundle
+    date_published: 08/18/2008
+    excerpt: I really enjoy telephony and writing the dialplan was getting tough without syntax highlighting. So, I wrote it and open sourced it!

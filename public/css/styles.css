@@ -270,7 +270,10 @@ h6{	font-size:14px; }
                 height: 220px;
 	}
 	
-	
+        h3.home_blog_link{
+            line-height: 14pt;
+            font-size: 19px;
+        }
 	
 	/* PORTFOLIO */
 	#portfolio{

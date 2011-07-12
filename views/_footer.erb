@@ -86,7 +86,7 @@
                     });        
                 $('div#flickr').fadeOut();
                 get_tweets();
-                <% if @post["hashtag"] %>
+                <% if @post && @post["hashtag"] %>
                     get_comments('<%= @post["hashtag"] %>');
                 <% end %>
                 get_photos();

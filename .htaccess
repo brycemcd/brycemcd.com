@@ -1,3 +1,21 @@
 redirect 301 /topics/portfolio/ http://www.brycemcdonnell.com/portfolio
 redirect 301 /contact/ http://www.brycemcdonnell.com/
-redirect 301 /2009/03/mootools-content-slider-javascript/ http://www.brycemcdonnell.com/improved content-slider-using-mootools
+redirect 301 /2009/03/mootools-content-slider-javascript/ http://www.brycemcdonnell.com/improved-content-slider-using-mootools
+redirect 301 /2009/07/fat-free-crm-lead-form/ http://www.brycemcdonnell.com/fat-gree-crm-lead-form
+redirect 301 /2009/05/improved-content-slider-in-mootools/ http://www.brycemcdonnell.com/improved-content-slider-using-mootools
+redirect 301 /blog/ http://www.brycemcdonnell.com/portfolio
+redirect 301 /2009/12/i-made-it-in-to-inc-magazine-now-hosting-fat-free-crm/ http://www.brycemcdonnell.com/i-made-it-in-to-inc-magazine
+redirect 301 /topics/stuff-im-working-on/ http://www.brycemcdonnell.com/portfolio
+redirect 301 /topics/businessentrepreneurship/ http://www.brycemcdonnell.com/portfolio
+redirect 301 /skills-and-expert-groups/content-slider/ http://www.brycemcdonnell.com/improved-content-slider-using-mootools
+redirect 301 /2009/07/thoughts-on-developing/ http://www.brycemcdonnell.com/throughts-on-developing 
+redirect 301 /2010/02/custom-routes-with-shoulda/ http://www.brycemcdonnell.com/custom-routes-with-shoulda  
+redirect 301 /skills-and-expert-groups/ruby-on-rails/ http://www.brycemcdonnell.com/portfolio
+redirect 301 /2009/07/ruby-on-rails-precision-text/ http://www.brycemcdonnell.com/portfolio
+redirect 301 /2008/08/text-mate-bundle-for-asterisk-telephony/ http://www.brycemcdonnell.com/textmate-bundle-for-asterisk-telephony
+redirect 301 /downloads/ContentSlider.js https://raw.github.com/gist/1063973/e0ae6ccf0dcc9507c473e1ea616f1543384848fb/contentslider.js 
+redirect 301 /2008/04/aaa-ohio/ http://www.brycemcdonnell.com/portfolio 
+redirect 301 /2008/07/college-guide-post/ / http://www.brycemcdonnell.com/portfolio
+redirect 301 /2010/02/ruby-relationships-without-the-database http://www.brycemcdonnell.com/portfolio
+redirect 301 /topics/technology http://www.brycemcdonnell.com/portfolio
+redirect 301 /skills-and-expert-groups/paypal-integration/ http://www.brycemcdonnell.com/portfolio

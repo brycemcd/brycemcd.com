@@ -21,7 +21,7 @@ function get_comments(hashtag){
                     $("div#comments").append("<div class='comments_post'><span class='commenter'><img src='"+tweet.profile_image_url+"' alt='@"+tweet.from_user+"'s picture' title='@"+tweet.from_user+"' class='avatar' /> <a href='http://www.twitter.com/"+tweet.from_user+"'>@"+tweet.from_user+"</a> <br /> "+ tweet.text +"</div>");
                 })
             } else {
-                    $("div#comments").append("<div class='comment'><strong>No Comments Just Yet</strong></div>");
+                    $("div#comments").append("<div class='comment'><strong><a href='https://twitter.com/share?text=%23"+hashtag+" ' title='comment on this post at twitter' data-text=' ' target='_blank'>Comment via twitter</a> </strong></div>");
             }    
         }
     });
